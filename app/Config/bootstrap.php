@@ -106,6 +106,15 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
+CakePlugin::load('DebugKit');
+CakePlugin::load('Utils');
+CakePlugin::load('Search');
+CakePlugin::load('Users');
+CakePlugin::load('BoostCake');
+CakePlugin::load('Social', array('bootstrap' => true, 'routes' => true));
+CakePlugin::load('SocialTwitter');
+CakePlugin::load('SocialFacebook');
+
 Configure::write('Opauth.Strategy.Facebook', array(
 	'app_id' => 'Your app ID',
 	'app_secret' => 'Your app secret'
@@ -115,12 +124,3 @@ Configure::write('Opauth.Strategy.Twitter', array(
 	'key' => 'Your key',
 	'secret' => 'Your secret'
 ));
-
-CakePlugin::load('DebugKit');
-CakePlugin::load('Utils');
-CakePlugin::load('Search');
-CakePlugin::load('Users');
-CakePlugin::load('BoostCake');
-CakePlugin::load('Social', array('bootstrap' => true, 'routes' => true));
-CakePlugin::load('SocialTwitter');
-CakePlugin::load('SocialFacebook');
