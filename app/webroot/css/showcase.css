@@ -1,0 +1,21 @@
+body {
+  padding-top: 40px;
+}
+
+.content {
+  margin-bottom: 60px;
+}
+
+dt {
+  margin-top: 8px;
+}
+
+.message {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.postTime {
+  color: #999999;
+}
