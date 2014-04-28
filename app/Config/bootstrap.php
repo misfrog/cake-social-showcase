@@ -106,6 +106,16 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
+Configure::write('Opauth.Strategy.Facebook', array(
+	'app_id' => 'Your app ID',
+	'app_secret' => 'Your app secret'
+));
+
+Configure::write('Opauth.Strategy.Twitter', array(
+	'key' => 'Your key',
+	'secret' => 'Your secret'
+));
+
 CakePlugin::load('DebugKit');
 CakePlugin::load('Utils');
 CakePlugin::load('Search');
