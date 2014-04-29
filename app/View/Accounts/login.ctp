@@ -48,12 +48,12 @@
 		<p>Or you can <a href="<?php echo $this->Html->url(array('controller' => 'accounts', 'action' => 'add')) ?>">signup</a> with a new account.</p>
 
 		<p>
-			<a href="<?php echo $this->Html->url('/auth/twitter', true) ?>">
+			<a href="<?php echo $this->Html->url('/connect/twitter', true) ?>">
 				<?php echo $this->Html->image('twitter/sign-in-with-twitter-d.png') ?>		
 			</a>
 		</p>
 		<p>
-			<a href="<?php echo $this->Html->url('/auth/facebook', true) ?>">
+			<a href="<?php echo $this->Html->url('/connect/facebook', true) ?>">
 				<?php echo $this->Html->image('facebook/sign-in-with-facebook.png') ?>		
 			</a>
 		</p>
