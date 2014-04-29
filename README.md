@@ -56,9 +56,9 @@ How to run
 
 	Facebook
 	```php
-	Configure::write('Opauth.Strategy.Facebook', array(^M
-        'app_id' => 'Your app ID',^M
-        'app_secret' => 'Your app secret'^M
-	));^M
+	Configure::write('Opauth.Strategy.Facebook', array(
+        'app_id' => 'Your app ID',
+        'app_secret' => 'Your app secret'
+	));
 	```
 	
