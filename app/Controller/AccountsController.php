@@ -67,8 +67,4 @@ class AccountsController extends UsersController {
 	public function afterLogin($data, $isFirstLogin) {
 		$this->Connection->handlePostSignIn();
 	}
-	
-	public function loginWithoutForm($user) {
-		$this->Auth->login($user);
-	}
 }
