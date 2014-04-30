@@ -19,7 +19,7 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h4 class="panel-title">
-			<?php echo $this->Html->image('facebook/f_logo.jpg', array('width' => 36, 'height' => 36)) ?> Twitter
+			<?php echo $this->Html->image('facebook/f_logo.jpg', array('width' => 36, 'height' => 36)) ?> Facebook
 		</h4>
 	</div>
 	<div class="panel-body">
