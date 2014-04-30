@@ -11,9 +11,27 @@ dt {
 }
 
 .message {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #d6e9c6;
+}
+.message h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.message > p,
+.message > ul {
+  margin-bottom: 0;
+}
+.message > p + p {
+  margin-top: 5px;
+}
+.message hr {
+  border-top-color: #c9e2b3;
 }
 
 .postTime {
