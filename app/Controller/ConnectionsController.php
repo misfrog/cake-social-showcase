@@ -10,9 +10,9 @@ class ConnectionsController extends AppController {
 	
 	public $uses = array();
 	
-	public $components = array(
-		'Social.Connection'
-		);
+// 	public $components = array(
+// 		'Social.Connection'
+// 		);
 	
 	/**
 	 * Render the status of connections across all providers to the user as HTML in their web browser.

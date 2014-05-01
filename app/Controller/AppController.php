@@ -25,6 +25,7 @@ class AppController extends Controller {
 	
 	public $components = array(
 		'Auth' => array(
+			'logoutRedirect' => array('plugin' => false, 'controller' => 'accounts', 'action' => 'login'),
 			'flash' => array(
 				'element' => 'alert',
 				'key' => 'auth',
@@ -36,7 +37,11 @@ class AppController extends Controller {
 		),
 		'Session',
 		'Security',
-		//'Users.RememberMe',
+		'Users.RememberMe',
+		'Social.Connection' => array(
+			'signUpUrl' => array('plugin' => false, 'controller' => 'accounts', 'action' => 'add'),
+			'loginRedirect' => array('plugin' => false, 'controller' => 'accounts', 'action' => 'afterSocialLogin')
+		)
 	);
 	
 	public function beforeFilter() {

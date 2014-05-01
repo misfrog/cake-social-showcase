@@ -11,27 +11,6 @@ class AccountsController extends UsersController {
 	
 	public $name = 'Accounts';
 	
-	// TODO
-	public $components = array(
-		'Auth' => array(
-			'flash' => array(
-				'element' => 'alert',
-				'key' => 'auth',
-				'params' => array(
-					'plugin' => 'BoostCake',
-					'class' => 'alert-danger'
-				)
-			)
-		),
-		'Session',
-		'Cookie',
-		'Paginator',
-		'Security',
-		'Search.Prg',
-		'Users.RememberMe',
-		'Social.Connection',
-	);
-	
 	public function beforeFilter() {
 		parent::beforeFilter();
 		$this->Auth->allow('login', 'add');
@@ -66,5 +45,10 @@ class AccountsController extends UsersController {
 	
 	public function afterLogin($data, $isFirstLogin) {
 		$this->Connection->handlePostSignIn();
+	}
+	
+	public function afterSocialLogin() {
+		$this->Session->setFlash(sprintf(__d('users', '%s you have successfully logged in'), $this->Auth->user('username')));
+		$this->redirect($this->Auth->redirectUrl());
 	}
 }
