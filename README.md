@@ -2,6 +2,7 @@ cake-social-showcase
 ====================
 
 This sample app demonstrates many of the capabilities of the cake-sociall project.
+Check out [online demo](http://cake-social-showcase.misfrog.com)
 
 How to run
 ====================
@@ -30,11 +31,11 @@ How to run
 	
 5. Set up URL rewriting
 
-	[Check here](http://book.cakephp.org/2.0/en/installation/url-rewriting.html)
+	Check out [here](http://book.cakephp.org/2.0/en/installation/url-rewriting.html)
 
 6. Set up CakePHP email configuration
 
-	[Check here](http://book.cakephp.org/2.0/en/core-utility-libraries/email.html)
+	Check out [here](http://book.cakephp.org/2.0/en/core-utility-libraries/email.html)
 	
 
 7. Create tables

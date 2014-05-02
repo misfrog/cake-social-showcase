@@ -78,12 +78,24 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<footer>
 		<div class="container">
 			<hr />
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+			<div class="row">
+				<div class="col-md-2">
+					<?php echo $this->Html->link(
+							$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+							'http://www.cakephp.org/',
+							array('target' => '_blank', 'escape' => false)
+						);
+					?>					
+				</div>
+				<div class="col-md-2">
+					<?php echo $this->Html->link(
+							$this->Html->image('github.png', array('alt' => 'github')),
+							'https://github.com/misfrog/cake-social',
+							array('target' => '_blank', 'escape' => false)
+						);
+					?>
+				</div>				
+			</div>
 			<?php echo $this->element('sql_dump'); ?>
 		</div>
 	</footer>
