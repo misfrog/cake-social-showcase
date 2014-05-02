@@ -1,7 +1,7 @@
 cake-social-showcase
 ====================
 
-This sample app demonstrates many of the capabilities of the cake-sociall project.
+This sample app demonstrates many of the capabilities of the cake-sociall project.  
 Check out [online demo](http://cake-social-showcase.misfrog.com)
 
 How to run
@@ -27,7 +27,7 @@ How to run
 	
 4. Create database and CakePHP database configuration
 	
-	[Check here](http://book.cakephp.org/2.0/en/getting-started.html#blog-tutorial)
+	Check out [here](http://book.cakephp.org/2.0/en/getting-started.html#blog-tutorial)
 	
 5. Set up URL rewriting
 
